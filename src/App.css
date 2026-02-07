@@ -1,0 +1,24 @@
+/* ===== GLOBAL HEIGHT FIX ===== */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* ===== APP WRAPPER ===== */
+.app {
+  display: flex;
+  min-height: 100vh;
+  background-color: #e8f4f8;
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+.main-content {
+  margin-left: 280px;
+  flex: 1;
+  padding: 40px 60px;
+  background-color: #e8f4f8;
+
+  min-height: 100vh;      /* FULL BLUE BACKGROUND */
+  box-sizing: border-box;
+  padding-bottom: 20px;  /* small white border at bottom */
+}

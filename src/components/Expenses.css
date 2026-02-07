@@ -1,0 +1,309 @@
+/* ============ EXPENSES PAGE ============ */
+.expenses-page-layout {
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ============ EXPENSE FORM ============ */
+.expense-form-container {
+  /* Form stays on left side */
+}
+
+.expense-form-header {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expense-input-main {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  outline: none;
+}
+
+.expense-input-main::placeholder {
+  color: #ccc;
+}
+
+/* Form Details Section */
+.expense-form-details {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.amount-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dollar-sign {
+  position: absolute;
+  left: 12px;
+  font-size: 18px;
+  color: #666;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.input-amount {
+  padding-left: 28px !important;
+}
+
+.input-amount,
+.input-select,
+.input-date,
+.input-description {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.input-amount:focus,
+.input-select:focus,
+.input-date:focus,
+.input-description:focus {
+  outline: none;
+  border-color: #93c5fd;
+}
+
+.input-description {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn-save {
+  width: 100%;
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-save:hover {
+  background-color: #16a34a;
+}
+
+/* ============ EXPENSES LIST ============ */
+.expenses-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.expenses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.expenses-header h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0;
+}
+
+.expense-count {
+  background-color: #93c5fd;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.total-amount-card {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+.expenses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Custom scrollbar */
+.expenses-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.expenses-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.expenses-list::-webkit-scrollbar-thumb {
+  background: #93c5fd;
+  border-radius: 10px;
+}
+
+.expenses-list::-webkit-scrollbar-thumb:hover {
+  background: #60a5fa;
+}
+
+.expense-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease-out;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.expense-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.expense-card-content {
+  flex: 1;
+}
+
+.expense-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.expense-info h3 {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.expense-category {
+  display: inline-block;
+  background-color: #93c5fd;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.expense-amount-date {
+  text-align: right;
+}
+
+.expense-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ef4444;
+  margin-bottom: 5px;
+}
+
+.expense-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.expense-description {
+  color: #666;
+  font-size: 15px;
+  margin: 10px 0 0 0;
+  line-height: 1.5;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+  height: fit-content;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+
+/* ============ EMPTY STATE ============ */
+.empty-state {
+  background-color: white;
+  border-radius: 15px;
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.empty-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.empty-state h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  font-size: 16px;
+  color: #666;
+}

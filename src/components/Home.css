@@ -1,0 +1,150 @@
+/* ============ HOME/DASHBOARD PAGE ============ */
+.home-page {
+  width: 100%;
+}
+
+/* Header Section */
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.savings-title {
+  font-size: 64px;
+  font-weight: bold;
+  color: #22c55e;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.earnings-subtitle {
+  font-size: 32px;
+  color: #22c55e;
+  margin: 0;
+}
+
+/* Main Content Area */
+.dashboard-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Progress Section */
+.progress-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-progress {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.progress-ring {
+  transform: rotate(0deg);
+}
+
+.progress-ring-circle {
+  transition: stroke-dashoffset 0.5s ease;
+  stroke-linecap: round;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.amount-spent {
+  font-size: 56px;
+  font-weight: bold;
+  color: #22c55e;
+  line-height: 1;
+}
+
+.spent-label {
+  font-size: 20px;
+  color: #22c55e;
+  margin: 5px 0;
+}
+
+.amount-earned {
+  font-size: 28px;
+  font-weight: bold;
+  color: #22c55e;
+  margin-top: 5px;
+}
+
+.earned-label {
+  font-size: 20px;
+  color: #22c55e;
+}
+
+/* Categories Section */
+.categories-section {
+  flex: 1;
+  max-width: 500px;
+}
+
+.categories-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.categories-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 25px 0;
+}
+
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category-bar {
+  height: 45px;
+  border-radius: 8px;
+}
+
+/* Different colors for each category */
+.category-bar.housing {
+  background-color: #a78bfa;
+  width: 100%;
+}
+
+.category-bar.food {
+  background-color: #67e8f9;
+  width: 100%;
+}
+
+.category-bar.utilities {
+  background-color: #86efac;
+  width: 80%;
+}
+
+.category-bar.personal {
+  background-color: #fbbf24;
+  width: 60%;
+}
+
+.category-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
