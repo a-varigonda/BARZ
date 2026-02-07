@@ -1,9 +1,10 @@
 import "./App.css";
+import Savings from "./components/Savings";
 
 function App() {
   return (
     <>
-      <p>hi</p>
+      <Savings />
     </>
   );
 }
