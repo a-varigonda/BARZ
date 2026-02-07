@@ -1,11 +1,11 @@
 import "./App.css";
-import Donut from "./components/visuals/Donut";
+import { SimpleBarChart } from "./components/visuals/Bar";
 
 function App() {
   return (
     <>
       <p>hi</p>
-      <Donut />
+      <SimpleBarChart />
     </>
   );
 }
