@@ -29,7 +29,6 @@ export default function useChat() {
 
       const content = res.data?.choices?.[0]?.message?.content;
 
-      // Claude returns content blocks, not a plain string
       if (Array.isArray(content)) {
         const text = content
           .filter((c: any) => c.type === "text")
