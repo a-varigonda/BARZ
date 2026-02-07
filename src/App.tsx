@@ -1,11 +1,10 @@
+// src/App.tsx
 import "./App.css";
+import Auth from "./pages/Auth";
 
 function App() {
-  return (
-    <>
-      <p>hi</p>
-    </>
-  );
+  return <Auth />;
 }
 
 export default App;
+
