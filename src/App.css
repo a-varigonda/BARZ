@@ -1,0 +1,24 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* .app {
+  display: flex;
+  min-height: 100vh;
+  background-color: #e8f4f8;
+} */
+
+/* ============ MAIN CONTENT ============ */
+.main-content {
+  margin-left: 280px;
+  flex: 1;
+  padding: 40px 60px;
+  background-color: #e8f4f8;
+}
