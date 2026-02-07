@@ -1,4 +1,6 @@
+// src/App.tsx
 import "./App.css";
+import Auth from "./pages/Auth";
 import { useState } from "react";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
@@ -80,3 +82,4 @@ function App() {
 }
 
 export default App;
+
